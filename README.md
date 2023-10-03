@@ -1,1 +1,2 @@
-# project1
+THE START OF WORK with GIT !
+
