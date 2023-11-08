@@ -1,2 +1,2 @@
-THE START OF WORK with GIT !
+My Resume.
 

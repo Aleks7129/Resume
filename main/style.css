@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  :root {
+        --text-color: rgb(240, 240, 240);
+        --accent-color: rgb(81, 192, 155) ;
+        --background-color: rgb(129, 146, 185) ;
+        --background-color-alternate:  #303841;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.container {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+  }
+
+.nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 22px;
+    padding: 32px;
+    font-weight: bold;
+}
+.nav a:hover {
+    background-color: var(--background-color);
+}
+  .welcome-section {
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    /*.welcome-section {
+      background-image: url("hall-back.avif"), url("img/jack-lantern1.jpeg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }*/
+    
+
+    .welcome-section h1 {
+        font-size: 60px;
+        color: var(--text-color)
+    }
+    p {
+        font-size: 30px;
+        font-weight: bold;
+        color: var(--accent-color);
+        margin: 30px 15px 40px 15px;
+    }
+    .project-section {
+      
+        background-color: var(--background-color);
+        padding: 40px 20px;
+    }
+        h2 {
+            font-size: 42px;
+            color: var(--text-color);
+            text-align: center ;
+            text-decoration: underline;
+            margin-bottom: 10px;
+            padding: 20px;
+    }
+        .project-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+      
+      .project-list article {
+        border: 1px solid var(--background-color)
+      }
+      
+      .project-list article:hover img {
+        transform: scale(2.0);
+        transition: transform 0.5s ease;
+      }
+      .project-list .title-container {
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--background-color-alternate);
+        min-height: 80px;
+      }
+
+      .project-list article h3 {
+       color: var(--accent-color);
+       font-size: 30px;
+       ;
+      }
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      article .title-container {
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+      .button {
+        background-color: var(--accent-color);
+        border-radius: 5px;
+        padding: 5px 15px;
+        display: inline-block;
+        justify-content: center;
+        color: var(--text-color);
+        font-size: 30px;
+        text-decoration: none;
+        transition: background-color 0.5s;
+      }
+      .button:hover {
+        background-color: var(--background-color-alternate);
+      }
+      
+      .button-container {
+        color: var(--background-color);
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;   
+      }
+
+      @media (max-width: 768px) {
+        .project-list {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .project-list {
+          grid-template-columns: 1fr;
+        }
+      }
+      .project-list img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    .contact {
+      min-height: 60vh;
+      background-color: var(--background-color-alternate);
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-decoration: none ;
+      height: 300px;
+    }
+      .contact-socials a {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        color: var(--accent-color) ;
+        text-decoration: none ;
+      }
+      .contact-socials {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-decoration: none ;
+      }
+      .icon {
+      width: 40px;
+    }
