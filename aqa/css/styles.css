@@ -79,6 +79,8 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+  /*пров. paddig/margin*/
+  
 }
 
 .project-item-deskr {
@@ -88,6 +90,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  
 }
 
 .sidebar {
