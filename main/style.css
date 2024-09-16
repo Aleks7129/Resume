@@ -48,7 +48,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     }
+    
     /*.welcome-section {
       background-image: url("hall-back.avif"), url("img/jack-lantern1.jpeg");
       background-size: cover;
